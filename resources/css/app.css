@@ -1,0 +1,45 @@
+/* Jakarta Sans Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "flowbite";
+
+@keyframes pulseScale {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+/* Tailwind-style helper */
+.animate-pulse-scale {
+    animation: pulseScale 1.4s ease-in-out infinite;
+}
+
+@keyframes wiggleScale {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.06) rotate(2deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(0deg);
+    }
+    75% {
+        transform: scale(1.06) rotate(-2deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.animate-wiggle-scale {
+    animation: wiggleScale 1.5s ease-in-out infinite;
+}

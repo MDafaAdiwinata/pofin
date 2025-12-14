@@ -1,0 +1,94 @@
+<footer class="bg-[#273E3D]">
+    <div class="mx-auto w-full container px-12 py-12 lg:py-16">
+        <div class="md:flex md:justify-between">
+            <div class="mb-12 md:mb-0">
+                <a href="/" class="flex items-center">
+                    <img src="{{ Vite::asset('resources/img/logo-light.svg') }}" class="h-12 md:h-16 me-4"
+                        alt="Letak Cart logo" />
+                    <span class="text-[#f6f6f8] self-center text-3xl md:text-4xl font-bold whitespace-nowrap">
+                        Pofin
+                    </span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-16 sm:grid-cols-2">
+                <div>
+                    <h2 class="mb-6 text-md md:text-lg lg:text-xl font-semibold text-[#f6f6f8]">Navigasi</h2>
+                    <ul class="text-[#f6f6f8]/80 font-light text-md md:text-lg">
+                        <li class="mb-4">
+                            <a href="/" class="hover:underline">Beranda</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/about" class="hover:underline">Tentang</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/bank" class="hover:underline">Bank</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/layanan" class="hover:underline">Layanan</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/kontak" class="hover:underline">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-md md:text-lg lg:text-xl font-semibold text-[#f6f6f8]">Legal</h2>
+                    <ul class="text-[#f6f6f8]/80 font-light text-md md:text-lg">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">
+                                ptbfn.info
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">
+                                +62 857 6554 4476
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">
+                                Syarat & Ketentuan
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">
+                                Kebijakan Privasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">
+                                Kota Tangerang Selatan, <br> Banten 15412
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-[#f6f6f8]/50 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-md text-[#f6f6f8]/50 sm:text-center">
+                © 2025 PT BFN - Adi XI RPL. Semua Hak Dilindungi Undang-undang.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0">
+                <a href="https://github.com/mdafaadiwinata" target="_blank" class="text-[#f5f5f8]/50 hover:text-[#f6f6f8] hover:scale-90 ms-5">
+                    <svg class="w-8 md:w-10 h-8 md:h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="sr-only">GitHub account</span>
+                </a>
+                <a href="https://github.com/mdafaadiwinata" class="text-[#f5f5f8]/50 hover:text-[#f6f6f8] hover:scale-90 ms-5">
+                    <svg class="w-8 md:w-10 h-8 md:h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="sr-only">GitHub account</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</footer>
