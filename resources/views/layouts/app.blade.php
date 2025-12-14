@@ -44,20 +44,6 @@
         </script>
     @endif
 
-    <audio id="bg-music" autoplay loop>
-        <source src="{{ asset('sound/bg-music.mp3') }}" type="audio/mpeg">
-    </audio>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const bg = document.getElementById("bg-music");
-            bg.volume = 0.2; // atur volume
-            bg.play().catch(() => {
-                console.log("User belum interaksi, audio pending.");
-            });
-        });
-    </script>
-
     <script>
         function sukuBunga() {
             return {
