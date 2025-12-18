@@ -3,7 +3,7 @@
         <div class="md:flex md:justify-between">
             <div class="mb-12 md:mb-0">
                 <a href="/" class="flex items-center">
-                    <img src="{{ Vite::asset('resources/img/logo-light.svg') }}" class="h-12 md:h-16 me-4"
+                    <img src="{{ asset('img/logo-light.svg') }}" class="h-12 md:h-16 me-4"
                         alt="Letak Cart logo" />
                     <span class="text-[#f6f6f8] self-center text-3xl md:text-4xl font-bold whitespace-nowrap">
                         Pofin

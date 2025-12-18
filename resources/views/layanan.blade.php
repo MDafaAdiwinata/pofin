@@ -21,7 +21,7 @@
     <x-navbar></x-navbar>
 
     {{-- Jumbotron Layanan --}}
-    <section class="bg-center bg-no-repeat bg-bannerLayanan h-[720px] flex items-center justify-center">
+    <section class="bg-center bg-no-repeat h-[720px] flex items-center justify-center" style="background-image: url('/img/bg-banner-layanan.png')">
         <div class="px-6 mx-auto container flex flex-col items-center justify-center py-24 lg:py-42">
             <h1 class="text-white font-bold text-3xl lg:text-5xl xl:text-6xl w-2/3 text-center mb-6">
                 Layanan Kami

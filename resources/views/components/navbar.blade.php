@@ -4,7 +4,7 @@
           class="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-8 transition-all duration-300 ease-in-out" id="navbarContent">
           <!-- Logo -->
           <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
-              <img src="{{ Vite::asset('resources/img/logo.svg') }}" class="h-10" alt="Pofin Deposito" />
+              <img src="{{ asset('img/logo.svg') }}" class="h-10" alt="Pofin Deposito" />
               <h1 class="text-[#1a1a1a] font-bold text-2xl">
                 Pofin
               </h1>

@@ -16,8 +16,8 @@ export default {
                 jakarta_sans: ["Plus Jakarta Sans", "sans-serif"],
             },
             backgroundImage: {
-                heroSection: "url('/resources/img/bg-hero-about.png')",
-                bannerLayanan: "url('/resources/img/bg-banner-layanan.png')",
+                heroSection: "url('img/bg-hero-about.png')",
+                bannerLayanan: "url('img/bg-banner-layanan.png')",
             },
         },
     },

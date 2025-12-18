@@ -30,7 +30,7 @@
                 </svg>
                 Kembali
             </a>
-            <img src="{{ Vite::asset('resources/img/logo.svg') }}" alt="" class="w-20 h-20">
+            <img src="{{ asset('img/logo.svg') }}" alt="" class="w-20 h-20">
         </div>
 
         <div class="w-full sm:max-w-md mt-6 px-5 md:px-6 py-4 border border-black/10 overflow-hidden rounded-xl bg-[#fff]">

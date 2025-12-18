@@ -8,7 +8,7 @@
     <title>Pofin Deposito Tentang</title>
 
     {{-- Website Logo --}}
-    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/img/logo.svg') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.svg') }}" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -21,7 +21,8 @@
     <x-navbar></x-navbar>
 
     {{-- Hero Section --}}
-    <section class="bg-center bg-no-repeat bg-heroSection h-screen bg-cover flex items-center justify-center">
+    <section style="background-image: url('/img/bg-hero-about.png')"
+        class="bg-center bg-no-repeat h-screen bg-cover flex items-center justify-center">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 class="mb-6 text-3xl font-bold text-[#202020] md:text-5xl lg:text-6xl">
                 Transparansi Deposito <br> untuk Semua, Bersama Pofin

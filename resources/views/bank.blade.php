@@ -8,7 +8,7 @@
     <title>Pofin Deposito Bank</title>
 
     {{-- Website Logo --}}
-    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/img/logo.svg') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.svg') }}" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

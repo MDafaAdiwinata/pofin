@@ -8,7 +8,7 @@
     <title>Pofin Deposito</title>
 
     {{-- Website Logo --}}
-    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/img/logo.svg') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.svg') }}" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -58,7 +58,7 @@
 
             <!-- RIGHT IMAGE -->
             <div class="w-full lg:w-1/2 justify-end hidden lg:flex">
-                <img src="{{ Vite::asset('resources/img/img-jumbotron-landing.png') }}" alt="Ilustrasi Grafik"
+                <img src="{{ asset('img/img-jumbotron-landing.png') }}" alt="Ilustrasi Grafik"
                     class="object-contain" />
             </div>
 
@@ -147,7 +147,7 @@
                 Bagaimana Cara Kerjanya?
             </h1>
             <div class="mt-10 md:mt-16 grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-6">
-                <img src="{{ Vite::asset('resources/img/img-cara-kerja.png') }}"
+                <img src="{{ asset('img/img-cara-kerja.png') }}"
                     class="hidden lg:block w-full lg:w-[600px] " alt="Image Help">
                 <div class="space-y-16">
 
@@ -234,7 +234,7 @@
                     </p>
 
                     <div class="flex flex-col md:flex-row items-center gap-2 md:gap-3 pt-8">
-                        <img src="{{ Vite::asset('resources/img/pelanggan-1.png') }}" alt=""
+                        <img src="{{ asset('img/pelanggan-1.png') }}" alt=""
                             class="w-10 md:w-12 rounded-full">
                         <span class="font-semibold text-lg md:text-xl text-[#F6F6F8]">
                             Alba Maps
@@ -252,7 +252,7 @@
                     </p>
 
                     <div class="flex flex-col md:flex-row items-center gap-2 md:gap-3 pt-8">
-                        <img src="{{ Vite::asset('resources/img/pelanggan-2.png') }}" alt=""
+                        <img src="{{ asset('img/pelanggan-2.png') }}" alt=""
                             class="w-10 md:w-12 rounded-full">
                         <span class="font-semibold text-lg md:text-xl text-[#1a1a1a]">
                             Darell IEM
@@ -272,7 +272,7 @@
                     </p>
 
                     <div class="flex flex-col md:flex-row items-center gap-2 md:gap-3 pt-8">
-                        <img src="{{ Vite::asset('resources/img/pelanggan-3.png') }}" alt=""
+                        <img src="{{ asset('img/pelanggan-3.png') }}" alt=""
                             class="w-10 md:w-12 rounded-full">
                         <span class="font-semibold text-lg md:text-xl text-[#1a1a1a]">
                             Oppa Nabil
@@ -280,7 +280,7 @@
                     </div>
                 </div>
                 <div class="w-full mx-auto flex items-center justify-center text-center">
-                    <img src="{{ Vite::asset('resources/img/img-rating.png') }}" class="hidden lg:block"
+                    <img src="{{ asset('img/img-rating.png') }}" class="hidden lg:block"
                         alt="Image Rating - Section REVIEW">
                 </div>
             </div>

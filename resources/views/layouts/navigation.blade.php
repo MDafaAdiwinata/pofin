@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <a href="/" class="flex items-center text-xl md:text-2xl gap-1 md:gap-2 font-bold">
-                    <img src="{{ Vite::asset('resources/img/logo.svg') }}" alt="" class="w-10">
+                    <img src="{{ asset('img/logo.svg') }}" alt="" class="w-10">
                     Pofin
                 </a>
             </div>
