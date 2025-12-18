@@ -82,7 +82,7 @@
                         Keamanan Terjamin
                     </h1>
                     <div class="text-[#1a1a1a]/80 font-light text-md md:text-lg xl:text-xl">
-                        Seluruh data pengguna diproses  dan disimpan dengan standar  keamanan tinggi.
+                        Seluruh data pengguna diproses dan disimpan dengan standar keamanan tinggi.
                     </div>
                 </div>
             </div>
