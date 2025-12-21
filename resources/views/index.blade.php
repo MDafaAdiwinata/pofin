@@ -58,8 +58,7 @@
 
             <!-- RIGHT IMAGE -->
             <div class="w-full lg:w-1/2 justify-end hidden lg:flex">
-                <img src="{{ asset('img/img-jumbotron-landing.png') }}" alt="Ilustrasi Grafik"
-                    class="object-contain" />
+                <img src="{{ asset('img/img-jumbotron-landing.png') }}" alt="Ilustrasi Grafik" class="object-contain" />
             </div>
 
         </div>
@@ -147,8 +146,8 @@
                 Bagaimana Cara Kerjanya?
             </h1>
             <div class="mt-10 md:mt-16 grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-6">
-                <img src="{{ asset('img/img-cara-kerja.png') }}"
-                    class="hidden lg:block w-full lg:w-[600px] " alt="Image Help">
+                <img src="{{ asset('img/img-cara-kerja.png') }}" class="hidden lg:block w-full lg:w-[600px] "
+                    alt="Image Help">
                 <div class="space-y-16">
 
                     <!-- Step 1 -->
@@ -317,9 +316,10 @@
                     <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
                         <div class="py-5 border-b border-bla">
                             <p class="mb-2 text-md md:text-lg text-[#1a1a1a]/80">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate saepe suscipit
-                                minima
-                                amet quas pariatur nobis rem reprehenderit expedita omnis?
+                                Pofin adalah platform informasi keuangan
+                                yang membantu pengguna memantau dan
+                                membandingkan data suku bunga secara
+                                praktis dan terpercaya.
                             </p>
                         </div>
                     </div>
@@ -343,9 +343,8 @@
                     <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
                         <div class="py-5 border-b border-bla">
                             <p class="mb-2 text-md md:text-lg text-[#1a1a1a]/80">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate saepe suscipit
-                                minima
-                                amet quas pariatur nobis rem reprehenderit expedita omnis?
+                                Tidak, seluruh layanan utama Pofin dapat
+                                digunakan secara gratis.
                             </p>
                         </div>
                     </div>
@@ -369,9 +368,9 @@
                     <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
                         <div class="py-5 border-b border-bla">
                             <p class="mb-3 text-md md:text-lg text-[#1a1a1a]/80">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate saepe suscipit
-                                minima
-                                amet quas pariatur nobis rem reprehenderit expedita omnis?
+                                Data suku bunga Pofin diperbarui secara
+                                berkala dan bersumber dari referensi
+                                resmi yang tepercaya.
                             </p>
                         </div>
                     </div>
@@ -395,9 +394,9 @@
                     <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
                         <div class="py-5 border-b border-bla">
                             <p class="mb-3 text-md md:text-lg text-[#1a1a1a]/80">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate saepe suscipit
-                                minima
-                                amet quas pariatur nobis rem reprehenderit expedita omnis?
+                                        Ya, Pofin menjaga keamanan data pribadi
+                                        pengguna dengan sistem perlindungan dan
+                                        kebijakan privasi yang ketat.
                             </p>
                         </div>
                     </div>
