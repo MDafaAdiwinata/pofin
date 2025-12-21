@@ -78,29 +78,27 @@
             <div
                 class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
 
-                <!-- Text -->
                 <p class="text-sm text-gray-600 dark:text-gray-300">
                     Bagikan Pofin melalui:
                 </p>
 
-                <!-- Share Buttons -->
                 <div class="flex items-center gap-3">
                     <!-- WhatsApp -->
-                    <a href="https://wa.me/?text=Yuk%20coba%20simulasi%20deposito%20di%20Pofin!%20Cepat%20dan%20mudah.%20👉%20https://pofin.my.id"
+                    <a href="https://wa.me/?text=Yuk%20coba%20simulasi%20deposito%20di%20Pofin!%20👉%20https://pofin.my.id"
                         target="_blank"
-                        class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+                        class="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
                         WhatsApp
                     </a>
 
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/" target="_blank"
-                        class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700">
+                        class="px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-lg hover:bg-pink-700">
                         Instagram
                     </a>
 
                     <!-- Copy Link -->
-                    <button onclick="navigator.clipboard.writeText('https://pofin.my.id')"
-                        class="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">
+                    <button onclick="copyLink()"
+                        class="px-4 py-2 text-sm font-medium text-gray-900 bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">
                         Salin Tautan
                     </button>
                 </div>

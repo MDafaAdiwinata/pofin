@@ -7,6 +7,19 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+window.copyLink = function () {
+    navigator.clipboard.writeText("https://pofin.my.id");
+
+    const toast = document.getElementById("toast-copy");
+    toast.classList.remove("hidden");
+    toast.classList.add("flex");
+
+    setTimeout(() => {
+        toast.classList.add("hidden");
+        toast.classList.remove("flex");
+    }, 2000);
+};
+
 // Script Hilang Muncul
 const navbar = document.getElementById("navbar");
 const navbarContent = document.getElementById("navbarContent");
@@ -29,7 +42,7 @@ const scrollThreshold = 600;
 window.addEventListener("scroll", function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if ( scrollTop > 0 ){
+    if (scrollTop > 0) {
         navbar.classList.add("shadow-md");
     } else {
         navbar.classList.remove("shadow-md");
@@ -66,4 +79,3 @@ function updateClock() {
 // Update setiap 1 detik
 setInterval(updateClock, 1000);
 updateClock(); // Load pertama
-
