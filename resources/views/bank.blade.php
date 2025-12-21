@@ -31,9 +31,9 @@
                 <label for="search" class="sr-only">
                     Search
                 </label>
-                <input type="text" id="search" name="q"
+                <input type="text" id="search" name="search"
                     class="bg-[#fff] border border-black/10 text-[#1a1a1a] text-md rounded-xl md:rounded-2xl block w-full py-2 md:py-3 px-3 md:px-4"
-                    placeholder="Cari Bank..." required />
+                    placeholder="Cari Bank..." value="{{ request("search") }}" required />
                 <button type="submit"
                     class="p-3 ms-2 text-sm md:text-md font-medium text-[#fff] bg-[#1a1a1a]/80 rounded-2xl">
                     <svg class="w-5 md:w-6 h-5 md:h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"

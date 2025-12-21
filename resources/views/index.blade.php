@@ -394,9 +394,9 @@
                     <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
                         <div class="py-5 border-b border-bla">
                             <p class="mb-3 text-md md:text-lg text-[#1a1a1a]/80">
-                                        Ya, Pofin menjaga keamanan data pribadi
-                                        pengguna dengan sistem perlindungan dan
-                                        kebijakan privasi yang ketat.
+                                Ya, Pofin menjaga keamanan data pribadi
+                                pengguna dengan sistem perlindungan dan
+                                kebijakan privasi yang ketat.
                             </p>
                         </div>
                     </div>

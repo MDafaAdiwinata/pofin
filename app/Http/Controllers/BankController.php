@@ -12,12 +12,13 @@ class BankController extends Controller
     {
         $query = Bank::where('is_active', 'Aktif');
 
-
         // Jika user mengisi input search
         if ($request->filled('search')) {
-            $query->where('nama_bank', 'like', '%' . $request->search . '%')
-                ->orWhere('kode_bank', 'like', '%' . $request->search . '%')
-                ->orWhere('deskripsi', 'like', '%' . $request->search . '%');
+            $query->where(function ($q) use ($request) {
+                $q->where('nama_bank', 'like', '%' . $request->search . '%')
+                    ->orWhere('kode_bank', 'like', '%' . $request->search . '%')
+                    ->orWhere('deskripsi', 'like', '%' . $request->search . '%');
+            });
         }
 
         $banks = $query->get();
