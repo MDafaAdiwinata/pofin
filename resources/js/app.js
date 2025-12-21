@@ -29,6 +29,12 @@ const scrollThreshold = 600;
 window.addEventListener("scroll", function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+    if ( scrollTop > 0 ){
+        navbar.classList.add("shadow-md");
+    } else {
+        navbar.classList.remove("shadow-md");
+    }
+
     if (scrollTop > scrollThreshold) {
         if (scrollTop > lastScrollTop) {
             // Scroll Down
