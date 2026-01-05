@@ -111,25 +111,45 @@
                     <h2 class="text-lg md:text-xl lg:text-2xl text-start font-semibold text-[#1a1a1a]">
                         Kirimkan Pesan kepada Kami
                     </h2>
-
-                    <form action="#" method="POST" class="mt-10 space-y-5">
-
+                    {{-- Alert --}}
+                    <div id="alert-3"
+                        class="alert-success-form hidden items-center p-4 mt-4 text-green-800 rounded-2xl bg-green-600/10"
+                        role="alert">
+                        <div class="ms-2 text-md font-medium">
+                            Yey Pesan Berhasil dikirim! 🥳
+                        </div>
+                        <button type="button"
+                            class="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-700 rounded-xl transition duration-300 focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-800 hover:text-white inline-flex items-center justify-center h-8 w-8"
+                            data-dismiss-target="#alert-3" aria-label="Close">
+                            <span class="sr-only">Close</span>
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                        </button>
+                    </div>
+                    <form name="submit-to-google-sheet" action="#" method="POST" class="mt-6 space-y-5">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                            <input type="text" placeholder="Nama Lengkap"
+                            <input type="text" placeholder="Nama Lengkap" name="nama"
                                 class="w-full px-3 py-2.5 border border-black/20 rounded-xl md:rounded-2xl focus:outline-none">
-                            <input type="email" placeholder="Email"
+                            <input type="email" placeholder="Email" name="email"
                                 class="w-full px-3 py-2.5 border border-black/20 rounded-xl md:rounded-2xl focus:outline-none">
                         </div>
 
-                        <input type="text" placeholder="Subjek"
+                        <input type="text" placeholder="Subjek" name="subjek"
                             class="w-full px-3 py-2.5 border border-black/20 rounded-xl md:rounded-2xl focus:outline-none">
 
-                        <textarea rows="6" placeholder="Pesan Anda"
+                        <textarea rows="6" placeholder="Pesan Anda" name="pesan"
                             class="w-full px-4 py-3 border border-black/20 rounded-xl md:rounded-2xl resize-none focus:outline-none"></textarea>
 
                         <button type="submit"
-                            class="w-full bg-[#3f4c3c] hover:bg-[#2f3a2d] text-white font-semibold py-3 rounded-2xl transition duration-300 hover:scale-95">
+                            class="btn-kirim w-full bg-[#3f4c3c] hover:bg-[#2f3a2d] text-white font-semibold py-3 rounded-2xl transition duration-300">
                             Kirim
+                        </button>
+                        <button type="button" disabled
+                            class="btn-loading hidden w-full bg-[#f0f0f0] hover:bg-[#ccc]/20 text-md md:text-lg text-[#1a1a1a]/60 border border-[#1a1a1a]/10 font-semibold py-2 rounded-2xl transition duration-300">
+                            Sedang Proses Kirim Feedback...
                         </button>
                     </form>
                 </div>
@@ -155,6 +175,32 @@
                 navbar.classList.remove("bg-[#f5f5f5]/80");
                 navbar.classList.add("bg-transparent");
             }
+        });
+
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxKAgZB5LHMbuskWt4AacQNBOZbM-OVsx8bo1XZXkcJl9HmlOB7c0y4wqBwnj6B75nc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const alertSuccessForm = document.querySelector('.alert-success-form');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // Ketika submit di klik
+            btnLoading.classList.toggle('hidden');
+            btnKirim.classList.toggle('hidden');
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    btnLoading.classList.toggle('hidden');
+                    btnKirim.classList.toggle('hidden');
+                    alertSuccessForm.classList.toggle('hidden');
+                    alertSuccessForm.classList.toggle('flex');
+                    console.log('Berhasil!', response)
+                })
+                .catch(error => console.error('Terjadi Kesalahan!', error.message))
         });
     </script>
 
